@@ -1,0 +1,124 @@
+first off, this is essentially not our project; it's a client's.
+but wait! what's the difference?
+
+if we're building our own project! In one hand, we could think of
+    two other secenarios here, and those are:
+
+* a beginner who has a big idea and should always start small
+    and build from there; which basiclly means you could build the
+    most basic version of your application, and so you can add
+    and build around it from there!
+
+the second one is:
+
+* when you have built and made acouple of projects by now, so
+    you actually can take that idea of yours and transform it
+    or treat it as a problem, now this problem might be big, it 
+    always is, so you need to break it down into small managable
+    sub-problems or sub-task that can be easy handled. You putting
+    it like that makes it always easy to know what to start with.
+
+    in this situation you could also be the kind of guy who has
+        some ideas about components and functions or even
+        some libraries that you're gonna need, and you can write
+        those down, like brain storming, if you like the idea!
+    so, like as you move along, you kind of have a non-complete map
+        of what are you, or what you want to build! and that could
+        simply be a feature like, backing up the system's data, or
+        having the application encrypt the data, or asking ther user
+        for a username and password, those kind of stuff! etc...
+
+
+so, phylosophicly; you if you take a step back from both examples
+    you can say or notice that these two maybe the same, because
+    they both start small, maybe brain storm about what they are
+    about to build, or simply making a blue print of their main 
+    script, etc... but you have to realize that the first might
+    actually learn more than the second one, because it's new 
+    for him! so he's learning something new! and also there's the
+    fact that you can choose to be the first one everytime, so
+    you can easily do that by picking a new project everytime.
+    this way you always make sure to learn something new!
+                THAT MAKES YOU A HACKER!
+
+
+========= Now, he's something! we're neither of the above!
+* because it's not our project, remember! even tough we can
+pick and choose from projects like, as a freelancer, as an example.
+
+we are actually mostly using what we already know, to make money,
+    by helping someone with their own project! or by making it 
+    from scratch; again whatever suits you! and you can learn 
+    something or two here as well, so phylosophically it might
+    put you in a spot between the two people we mentioned earlier!
+
+Anyway, think about it, you discuss and agree with the client about
+    what he wants and needs, and you start! Let's just make it this simple!
+
+Enough phylosophical talk, let's disassemble the project at hand;
+A martial art dojo system manager!
+
+# client's request!
+So the customer/client sais they want a desktop app that he can click
+    on and gives him all his students; of course all of this is
+    about him moving on from a text book based register that he needs
+    to draw himself and it just takes a lot of time! of course the 
+    App should do the basic opprations, like Create Read Update Delete students, logging
+    student's attendance!
+
+
+As a developer what can you extract and summaries from all this?
+    how can you help this client improve their work? what makes 
+    this application complete? a lot of questions could be asked!
+    so why not just start by what makes our app a dojo app?
+    we can actually start by making the most basic version of our
+    app that works and then we can then decide where to move from 
+    there? ok, sounds like a plan, let's do it!
+
+
+$$$$$$$$$$$$$$$$$$$$$
+last thing I promse, let's just discuss this last thing before 
+    writing some code! 
+ok, and let me just mention again that programming isn't about 
+    typing code and executing it! it's about solving a problem!
+    the code is just just an implementation of our solution for 
+    some problem or a problem!
+
+
+breaking down the problem, making a simple blue print
+
+_ students (ui , database)
+_ attendance
+
+&student -> attendance (attendace is gonna have the student's primary key as a foreign key)
+&attendance_status -> attendance (attendance is gonna have the attendance_status's priamry key as a fk)
+
+____ database (dojo_database)
+students (table)
+_student_id(integer) pk (primary key) auto_increment
+_first_name(varchar)
+_last_name(varchar)
+
+attendance_status (table)
+_status_id(integer) pk (primary key) auto_increment
+_status_name(varchar)
+
+attendance (table)
+_attendance_id(integer) pk (primary key) auto_increment
+_status_id(integer) fk (foreign key) 
+_student_id(integer) fk (foreign key)
+
+
+
+save students , check for student's attendance, delete and add students (crud students)
+
+now we do have a basic idea of what our db might look like 
+
+
+==== make a simple ui (user interface) using the qt designer
+next thing we are gonna try to create the db itself
+next thing we are gonna try to connect our app to the db
+
+insert some data and show it in a table (create read the data which is basiclly just students)
+
+
