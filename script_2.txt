@@ -1,0 +1,43 @@
+==== next step (breaking down the problem, making a simple blue print)
+
+make a simple ui (user interface) using the qt designer
+next thing we are gonna try to create the db itself
+next thing we are gonna try to connect our app to the db
+
+_ students (ui , database)
+_ attendance
+
+&student -> attendance (attendace is gonna have the student's primary key as a foreign key)
+&attendance_status -> attendance (attendance is gonna have the attendance_status's priamry key as a fk)
+
+____ database (dojo_database)
+students (table)
+_student_id(integer) pk (primary key) auto_increment
+_first_name(varchar)
+_last_name(varchar)
+
+attendance_status (table)
+_status_id(integer) pk (primary key) auto_increment
+_status_name(varchar)
+
+attendance (table)
+_attendance_id(integer) pk (primary key) auto_increment
+_status_id(integer) fk (foreign key) 
+_student_id(integer) fk (foreign key)
+
+
+_ todo (goal)
+  + insert some data and show it in a table (create read the data which is basiclly just students)
+
+-------------------------
+
++ in this video we're gonna try to make a simple app that works with what we've summirized so far,
+  we're gonna make the ui, connect that to a db that we're gonna create, and try to show that data
+  to our user first, and then try to work around it and manipulate it from our app.
++ so you could think of our user interface here as a middle man between us and the db, or like
+  people call it these days (API: make sure to google that) 
+
++ in order for us to start, we need to ask some questions! we always need a question to get started!
+  or have a problem to fix, if it's too large of a problem we need to break it down!
+
+  alright, now let's review our problem again and get ourselves some questions.

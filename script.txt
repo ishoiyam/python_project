@@ -113,8 +113,10 @@ save students , check for student's attendance, delete and add students (crud st
 now we do have a basic idea of what our db might look like 
 
 
-==== make a simple ui (user interface) using the qt designer
+==== next step 
+make a simple ui (user interface) using the qt designer
 next thing we are gonna try to create the db itself
 next thing we are gonna try to connect our app to the db
 
-insert some data and show it in a table (create read the data which is basiclly just students)
+_ todo (goal)
+  + insert some data and show it in a table (create read the data which is basiclly just students)
