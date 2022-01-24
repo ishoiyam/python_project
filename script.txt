@@ -108,8 +108,6 @@ _attendance_id(integer) pk (primary key) auto_increment
 _status_id(integer) fk (foreign key) 
 _student_id(integer) fk (foreign key)
 
-
-
 save students , check for student's attendance, delete and add students (crud students)
 
 now we do have a basic idea of what our db might look like 
@@ -120,5 +118,3 @@ next thing we are gonna try to create the db itself
 next thing we are gonna try to connect our app to the db
 
 insert some data and show it in a table (create read the data which is basiclly just students)
-
-
