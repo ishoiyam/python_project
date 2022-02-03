@@ -1,9 +1,3 @@
-==== next step (breaking down the problem, making a simple blue print)
-
-make a simple ui (user interface) using the qt designer
-next thing we are gonna try to create the db itself
-next thing we are gonna try to connect our app to the db
-
 _ students (ui , database)
 _ attendance
 
@@ -11,7 +5,7 @@ _ attendance
 &attendance_status -> attendance (attendance is gonna have the attendance_status's priamry key as a fk)
 
 ____ database (dojo_database)
-students (table)
+student (table)
 _student_id(integer) pk (primary key) auto_increment
 _first_name(varchar)
 _last_name(varchar)
@@ -25,10 +19,6 @@ _attendance_id(integer) pk (primary key) auto_increment
 _status_id(integer) fk (foreign key) 
 _student_id(integer) fk (foreign key)
 
-
-_ todo (goal)
-  + insert some data and show it in a table (create read the data which is basiclly just students)
-
 -------------------------
 
 + in this video we're gonna try to make a simple app that works with what we've summirized so far,
@@ -41,3 +31,19 @@ _ todo (goal)
   or have a problem to fix, if it's too large of a problem we need to break it down!
 
   alright, now let's review our problem again and get ourselves some questions.
+
+====== task (sub-tasks)
+create a table that shows all the student's on the db
+create a form to add a student, another to update or delete a student (it)
+__ think about the above a little bit (that's CRUD) create read(table) update delete
+
+__ we are gonna face another problem, what do we want to store on each student:
+    name, age, picture, contact info, address, email, etc...
+__ we're gonna deal with problems as they come along the way! so you will get some real practice!
+  you can watch me solve them as I go! Anyway we'll cross that brige when we get there!
+
+- why M I saying that? BECAUSE I can't just inticipate every problem I'm gonna face!
+  so improvising is my only go here! I guess this is why most teachers don't go with real world
+    problems!! haha
+
+
