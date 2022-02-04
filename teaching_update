@@ -60,4 +60,5 @@ next_video (engines in mysql)  in general and then in mysql
 
 
 
-
+resources:
+	https://zetcode.com/mysql/storageengines/
