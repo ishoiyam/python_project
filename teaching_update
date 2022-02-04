@@ -1,0 +1,62 @@
+
+in order for us to update something on the db
+
+=> student's table
+
+* 1, ahmed, icho , 2000-01-01
+* 2, karim, benzima , 1934-01-01
+
+update student set first_name=%s, last_name=%s, birth_date=%s where student_id=%s;
+
+
+self.conn = connect to db...
+self.cursor = self.conn.cursor()
+
+def update_student(self, first_name, last_name, birth_date, student_id):
+	query = """ update student set first_name=%s, last_name=%s, birth_date=%s where student_id=%s """
+
+	first_name = self.lineEdit_first_name.text()
+
+	data = (first_name, last_name, birth_date, student_id)
+	self.cursor.execute(query, data)
+	self.conn.commit()
+
+========================
+
+
+
+def update_student(...):
+	...
+	self.clear_fields()
+
+def create_student(...):
+	...
+	self.clear_fields()
+
+def clear_fields(self):
+	self.first_name.clear()
+	self.last_name.clear()
+	self.birth_date.clear()
+	self.student_id.clear()
+
+=============================
+
+_ todo
+create the database
+	.sql (is just the structure of our db in a file which ends with the extention of youtube_tutorial_db.sql)
+	tables 
+	keys (primary & foreign)
+	#engine (homework) and mine // let me just have a unique specific video for this one
+
+	_ how can we connect to our server from the terminal (mysql -u "username" -p "password")
+	_ source command to execute a .sql file from it's path
+	_ you need to understand that each time you change the .sql you actually need to execute it
+
+connect to the db from the python interpreter and then from our app
+
+
+
+
+
+
+
