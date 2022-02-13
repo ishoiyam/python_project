@@ -1,4 +1,5 @@
 
+-- change the db name
 drop database if exists `karim_benzema_db` ; 
 create database `karim_benzema_db`;
 -- you have to select the db that you want to work with
