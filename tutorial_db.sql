@@ -1,3 +1,4 @@
+-- delete this db and create a new one with a new name
 
 -- change the db name
 drop database if exists `karim_benzema_db` ; 
