@@ -1,0 +1,7 @@
+** it's been a while so, let's start with a recap/review
+
+-> task 1:
+	show data from db in our app (table format)
+
+-> task 2:
+	add a label of student enrolement number (id) to the form
