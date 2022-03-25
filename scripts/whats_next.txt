@@ -1,7 +1,22 @@
-** it's been a while so, let's start with a recap/review
 
--> task 1:
-	show data from db in our app (table format)
 
--> task 2:
-	add a label of student enrolement number (id) to the form
+-> stretch them column table
+-> handle the ui so the first window always opens first thing
+-> set that lineEdit_birth_date to change to dateEdit_birth_date
+
+=======
+* student
+first_name
+last_name
+__ birth_info
+birth_date (dateEdit)
+birth_location (lineEdit)
+
+__ sport_info
+sport_name (varchar in db) (lineEdit)
+
+__ belt_info
+belt_color (comboBox)
+belt_gained_date (dateEdit) (date)
+
+
